@@ -34,7 +34,9 @@ $tumblrjs.user.ready = function (submissions_blog_url,callback) {
         submissions_blog_url = null;
     }
     if (submissions_blog_url) {
-        // TODO if submissions are not enabled we might want to open an iframe to another blog we just use for this purpose?
+        // TODO if submissions are not enabled or we are using a custom domain
+        // we might want to open an iframe to another blog we use just for this purpose?
+        // Still working on an `elegant` solution to this!?
     }
     if (document.URL && document.URL.toLowerCase().substring(document.URL.length-12) === '.tumblr.com/') {
       // add iframe to tumblr submissions page
@@ -50,7 +52,7 @@ $tumblrjs.user.ready = function (submissions_blog_url,callback) {
         }
       });
       frame.setAttribute('style','display: none;');
-      frame.setAttribute('src',optional_submissions_blog_url || document.URL + 'submit');
+      frame.setAttribute('src',document.URL + 'submit');
       document.body.appendChild(frame);
     } else {
       if (document.URL && document.URL.toLowerCase().substring(document.URL.length-18) === '.tumblr.com/submit') {
