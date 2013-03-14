@@ -2,9 +2,7 @@
  $tumblr.user.js v0.0.1
  Client side javascript for getting the currently logged in tumblr user
 
- Copyright (C) 2013 Andrew McGreevy
-
- }}8{{ (http://8le.gd)
+ Copyright (C) 2013 Andrew McGreevy }}8{{ (http://8le.gd)
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
